@@ -296,11 +296,26 @@ function setGlobals(site) {
 /* =========================
    Hero slideshow
 ========================= */
-function setHero(site) {
-  const hero = $("#heroBg");
-  if (!hero) return;
-  const imgs = (site.heroImages || []).map((x) => (typeof x === "string" ? x : x.image)).filter(Boolean);
-  if (!imgs.length) return;
+function normalizeAssetPath(p){
+  if(!p) return "";
+  // إذا رابط كامل http/https خليه
+  if(/^https?:\/\//i.test(p)) return p;
+  // إذا بدا بـ / راه OK
+  if(p.startsWith("/")) return p;
+  // إلا جا من CMS بحال uploads/xxx.jpg نخليه root
+  return "/" + p;
+}
+
+function setHero(site){
+  const hero = document.getElementById("heroBg");
+  if(!hero) return;
+
+  const imgs = (site.heroImages || [])
+    .map(x => typeof x === "string" ? x : x.image)
+    .filter(Boolean)
+    .map(normalizeAssetPath);
+
+  if(!imgs.length) return;
 
   let i = 0;
   const apply = () => {
@@ -309,7 +324,14 @@ function setHero(site) {
   };
 
   apply();
-  if (imgs.length > 1) setInterval(apply, 4800);
+  if(imgs.length > 1) setInterval(apply, 4800);
+
+  // ✅ نفس صور الهيرو نخليهم يعبّيو Tiles ديال Categories
+  document.querySelectorAll(".tileHero").forEach(el=>{
+    const n = parseInt(el.getAttribute("data-hero") || "1", 10) - 1;
+    const url = imgs[(n + imgs.length) % imgs.length];
+    if(url) el.style.backgroundImage = `url('${url}')`;
+  });
 }
 
 /* =========================
