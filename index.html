@@ -125,9 +125,10 @@
           </p>
         </div>
 
+        <!-- ✅ Tiles now use hero images from site.json via app.js -->
         <div class="grid grid--3 stagger">
           <a class="tile reveal" href="armarios.html">
-            <div class="tile__img" style="background-image:url('assets/img/hero/hero-2.jpg')"></div>
+            <div class="tile__img tileHero" data-hero="2"></div>
             <div class="tile__body">
               <div class="tile__t" data-i18n="nav.armarios">Armarios</div>
               <div class="tile__d" data-i18n="home.armariosDesc">2, 3, 4 puertas · colores & medidas</div>
@@ -135,7 +136,7 @@
           </a>
 
           <a class="tile reveal" href="sedari.html">
-            <div class="tile__img" style="background-image:url('assets/img/hero/hero-3.jpg')"></div>
+            <div class="tile__img tileHero" data-hero="3"></div>
             <div class="tile__body">
               <div class="tile__t" data-i18n="nav.sedari">Sedari</div>
               <div class="tile__d" data-i18n="home.sedariDesc">Confort + tejido premium · varios tonos</div>
@@ -143,7 +144,7 @@
           </a>
 
           <a class="tile reveal" href="salon.html">
-            <div class="tile__img" style="background-image:url('assets/img/hero/hero-1.jpg')"></div>
+            <div class="tile__img tileHero" data-hero="1"></div>
             <div class="tile__body">
               <div class="tile__t" data-i18n="nav.salon">Salón</div>
               <div class="tile__d" data-i18n="home.salonDesc">Sofás, chaise longue, mesas</div>
@@ -227,7 +228,9 @@
       <span class="floatBtn__text">TikTok</span>
     </a>
   </div>
-<script>document.documentElement.classList.add('js');</script>
+
+  <!-- JS flags for reveal -->
+  <script>document.documentElement.classList.add('js');</script>
   <script defer src="assets/js/app.js"></script>
 </body>
 </html>
