@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sedari | Sueño Hogar by Paco Deconforty</title>
+  <meta name="description" content="Sedari moderno: confort, tejidos premium, varios colores. Pide por WhatsApp." />
+  <meta name="theme-color" content="#0c1b2a" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="miniHeader">
+    <div class="wrap miniHeader__inner">
+      <a class="backLink" href="index.html">← <span data-i18n="nav.home">Inicio</span></a>
+      <div class="miniHeader__right">
+        <div class="lang">
+          <button class="lang__btn" data-lang="es">ES</button>
+          <button class="lang__btn" data-lang="fr">FR</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+        </div>
+        <a class="btn btn--whatsapp" id="waTop" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="pageHero">
+    <div class="wrap pageHero__inner">
+      <h1 data-i18n="pages.sedari.title">Sedari (tapicería)</h1>
+      <p class="muted" data-i18n="pages.sedari.sub">
+        Confort + estilo moderno · pide color y medida por WhatsApp.
+      </p>
+
+      <div class="toolbar">
+        <input id="search" class="input" type="search" placeholder="Buscar..." />
+        <select id="colorFilter" class="input">
+          <option value="" data-i18n="filter.allColors">Todos los colores</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div id="productGrid" class="grid grid--3"></div>
+    </div>
+  </section>
+
+  <footer class="footer footer--simple">
+    <div class="wrap footer__bottom">
+      <span class="muted">© <span id="year"></span> Sueño Hogar</span>
+      <a class="muted" href="/admin/">Admin</a>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/app.js"></script>
+  <script>
+    window.PAGE_CATEGORY = "sedari";
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "canape-estambul",
+    "category": "armarios",
+    "name": {"es":"Canapé Estambul","fr":"Coffre-lit Estambul","en":"Ottoman Bed Estambul"},
+    "price": "Consultar",
+    "image": "assets/img/products/canape-estambul.jpg",
+    "colors": ["Blanco","Ártico","Beig","Cerezo","Choco"],
+    "sizes": ["90","105","120","135","150","160","180"],
+    "desc": {
+      "es":"Cajón amplio, tapa metálica, tablero perforado.",
+      "fr":"Grand coffre, structure solide, plateau perforé.",
+      "en":"Large storage, solid frame, perforated board."
+    }
+  },
+  {
+    "id": "armario-2p",
+    "category": "armarios",
+    "name": {"es":"Armario Estambul 2 puertas","fr":"Armoire Estambul 2 portes","en":"Wardrobe Estambul 2 doors"},
+    "price": "500€",
+    "image": "assets/img/products/armario-2p.jpg",
+    "colors": ["Ártico","Cambrian","Blanco"],
+    "sizes": ["100x200x50"],
+    "desc": {
+      "es":"Armario moderno con 2 puertas y cajones.",
+      "fr":"Armoire moderne 2 portes avec tiroirs.",
+      "en":"Modern 2-door wardrobe with drawers."
+    }
+  },
+  {
+    "id": "armario-3p",
+    "category": "armarios",
+    "name": {"es":"Armario Estambul 3 puertas","fr":"Armoire Estambul 3 portes","en":"Wardrobe Estambul 3 doors"},
+    "price": "Consultar",
+    "image": "assets/img/products/armario-3p.jpg",
+    "colors": ["Ártico","Cambrian","Blanco"],
+    "sizes": ["150x200x50"],
+    "desc": {
+      "es":"3 puertas + cajones. Ideal para dormitorio.",
+      "fr":"3 portes + tiroirs. Idéal chambre.",
+      "en":"3 doors + drawers. Perfect for bedroom."
+    }
+  },
+  {
+    "id": "armario-4p",
+    "category": "armarios",
+    "name": {"es":"Armario Estambul 4 puertas","fr":"Armoire Estambul 4 portes","en":"Wardrobe Estambul 4 doors"},
+    "price": "Consultar",
+    "image": "assets/img/products/armario-4p.jpg",
+    "colors": ["Ártico","Cambrian","Blanco"],
+    "sizes": ["200x200x50"],
+    "desc": {
+      "es":"4 puertas + cajones. Gran capacidad.",
+      "fr":"4 portes + tiroirs. Grande capacité.",
+      "en":"4 doors + drawers. Large capacity."
+    }
+  },
+  {
+    "id": "sofa-sevilla",
+    "category": "salon",
+    "name": {"es":"Chaise longue Sevilla","fr":"Canapé d’angle Sevilla","en":"Chaise longue Sevilla"},
+    "price": "Consultar",
+    "image": "assets/img/products/sofa-sevilla.jpg",
+    "colors": ["Gris","Beig","Negro"],
+    "sizes": ["265x155"],
+    "desc": {
+      "es":"Asientos deslizantes, respaldos reclinables, arcón.",
+      "fr":"Assises coulissantes, dossiers inclinables, coffre.",
+      "en":"Sliding seats, reclining backs, storage."
+    }
+  },
+  {
+    "id": "sofa-paris",
+    "category": "salon",
+    "name": {"es":"Chaise longue Paris","fr":"Canapé d’angle Paris","en":"Chaise longue Paris"},
+    "price": "Consultar",
+    "image": "assets/img/products/sofa-paris.jpg",
+    "colors": ["Gris","Beig","Negro"],
+    "sizes": ["265x155"],
+    "desc": {
+      "es":"Respaldos reclinables, asientos deslizantes.",
+      "fr":"Dossiers inclinables, assises coulissantes.",
+      "en":"Reclining backs, sliding seats."
+    }
+  },
+  {
+    "id": "colchon-carbono",
+    "category": "salon",
+    "name": {"es":"Colchón Carbono 25cm","fr":"Matelas Carbone 25cm","en":"Carbon Mattress 25cm"},
+    "price": "Consultar",
+    "image": "assets/img/products/colchon-carbono.jpg",
+    "colors": ["Blanco"],
+    "sizes": ["90","105","120","135","150","160","180"],
+    "desc": {
+      "es":"Tejido Strech alto gramaje. Capas multicapa.",
+      "fr":"Tissu strech. Couches multi-niveaux.",
+      "en":"High-grammage stretch fabric. Multi-layer core."
+    }
+  }
+]

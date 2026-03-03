@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "Settings"
+        file: "assets/data/site.json"
+        fields:
+          - { label: "Brand Title", name: "brandTitle", widget: "string" }
+          - { label: "Brand Sub", name: "brandSub", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "TikTok URL", name: "tiktok", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - label: "Hero Images"
+            name: "heroImages"
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image" }
+          - label: "Featured Product IDs"
+            name: "featuredIds"
+            widget: "list"
+            field: { label: "Product ID", name: "id", widget: "string" }
+
+  - name: "products"
+    label: "Products"
+    file: "assets/data/products.json"
+    format: "json"
+    fields:
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Category", name: "category", widget: "select", options: ["armarios","sedari","salon"] }
+          - label: "Name"
+            name: "name"
+            widget: "object"
+            fields:
+              - { label: "ES", name: "es", widget: "string" }
+              - { label: "FR", name: "fr", widget: "string" }
+              - { label: "EN", name: "en", widget: "string" }
+          - { label: "Price", name: "price", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Colors", name: "colors", widget: "list", field: { label: "Color", name: "color", widget: "string" } }
+          - { label: "Sizes", name: "sizes", widget: "list", field: { label: "Size", name: "size", widget: "string" } }
+          - label: "Description"
+            name: "desc"
+            widget: "object"
+            fields:
+              - { label: "ES", name: "es", widget: "text" }
+              - { label: "FR", name: "fr", widget: "text" }
+              - { label: "EN", name: "en", widget: "text" }
