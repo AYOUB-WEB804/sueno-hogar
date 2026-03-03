@@ -1,11 +1,233 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Admin | Sueño Hogar</title>
+
+  <title>Sueño Hogar by Paco Deconforty | Muebles & Descanso</title>
+  <meta name="description" content="Armarios, sedari, sofás, canapés, colchones y más. Pide por WhatsApp en 1 minuto." />
+  <meta name="theme-color" content="#070b12" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <div class="topbar__left reveal">
+        <span class="chip">Sueño Hogar</span>
+        <span class="muted" data-i18n="topbar.ship">España · Atención rápida</span>
+      </div>
+
+      <div class="topbar__right reveal">
+        <div class="lang">
+          <button class="lang__btn" data-lang="es">ES</button>
+          <button class="lang__btn" data-lang="fr">FR</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+        </div>
+
+        <a class="iconBtn" id="tiktokLink" target="_blank" rel="noopener" aria-label="TikTok">
+          <span class="icon icon--tt"></span>
+        </a>
+        <a class="iconBtn iconBtn--wa" id="waTop" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <span class="icon icon--wa"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand reveal" href="index.html">
+        <img id="logoImg" class="brand__logo" src="assets/img/logo.png" alt="Logo" />
+        <div class="brand__text">
+          <div class="brand__title" id="brandTitle">Sueño Hogar</div>
+          <div class="brand__sub" id="brandSub">by Paco Deconforty</div>
+        </div>
+      </a>
+
+      <div class="nav__links reveal">
+        <a href="index.html" class="active" data-i18n="nav.home">Inicio</a>
+        <a href="armarios.html" data-i18n="nav.armarios">Armarios</a>
+        <a href="sedari.html" data-i18n="nav.sedari">Sedari</a>
+        <a href="salon.html" data-i18n="nav.salon">Salón</a>
+      </div>
+
+      <a class="btn btn--primary reveal" id="callBtn" href="#" data-i18n="cta.call">Llamar</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__glow"></div>
+
+      <div class="wrap hero__inner">
+        <div class="hero__content">
+          <div class="pill reveal" data-i18n="hero.badge">Calidad · Diseño · Precio</div>
+
+          <h1 class="hero__title reveal" data-i18n="hero.title">
+            Muebles & descanso para tu hogar
+          </h1>
+
+          <p class="hero__subtitle reveal" data-i18n="hero.subtitle">
+            Armarios, sedari, canapés, colchones y sofás. Pide por WhatsApp en 1 minuto.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="armarios.html" data-i18n="hero.cta1">Ver Armarios</a>
+            <a class="btn btn--wa" id="waHero" target="_blank" rel="noopener" data-i18n="hero.cta2">Pedir por WhatsApp</a>
+          </div>
+
+          <div class="hero__line reveal" data-i18n="hero.productline">
+            Entrega rápida · Varios colores · Medidas disponibles
+          </div>
+
+          <div class="hero__proof">
+            <div class="proof reveal">
+              <div class="proof__t" data-i18n="trust.t1">Asesoramiento rápido</div>
+              <div class="proof__d" data-i18n="trust.d1">Te ayudamos con medidas y color</div>
+            </div>
+            <div class="proof reveal">
+              <div class="proof__t" data-i18n="trust.t2">Acabados premium</div>
+              <div class="proof__d" data-i18n="trust.d2">Look moderno y elegante</div>
+            </div>
+            <div class="proof reveal">
+              <div class="proof__t" data-i18n="trust.t3">Precios claros</div>
+              <div class="proof__d" data-i18n="trust.d3">Pide presupuesto por WhatsApp</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__card reveal">
+          <div class="cardLux">
+            <div class="cardLux__top">
+              <div class="cardLux__title" data-i18n="home.featured">Destacados</div>
+              <div class="cardLux__hint" data-i18n="home.featuredHint">Actualizado desde el panel</div>
+            </div>
+            <div id="featuredGrid" class="grid grid--2 stagger"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LONG HOME -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="reveal" data-i18n="home.categories">Categorías</h2>
+          <p class="muted reveal" data-i18n="home.categoriesSub">
+            Armarios, sedari y salón — estilo moderno con toque “future”.
+          </p>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <a class="tile reveal" href="armarios.html">
+            <div class="tile__img" style="background-image:url('assets/img/hero/hero-2.jpg')"></div>
+            <div class="tile__body">
+              <div class="tile__t" data-i18n="nav.armarios">Armarios</div>
+              <div class="tile__d" data-i18n="home.armariosDesc">2, 3, 4 puertas · colores & medidas</div>
+            </div>
+          </a>
+
+          <a class="tile reveal" href="sedari.html">
+            <div class="tile__img" style="background-image:url('assets/img/hero/hero-3.jpg')"></div>
+            <div class="tile__body">
+              <div class="tile__t" data-i18n="nav.sedari">Sedari</div>
+              <div class="tile__d" data-i18n="home.sedariDesc">Confort + tejido premium · varios tonos</div>
+            </div>
+          </a>
+
+          <a class="tile reveal" href="salon.html">
+            <div class="tile__img" style="background-image:url('assets/img/hero/hero-1.jpg')"></div>
+            <div class="tile__body">
+              <div class="tile__t" data-i18n="nav.salon">Salón</div>
+              <div class="tile__d" data-i18n="home.salonDesc">Sofás, chaise longue, mesas</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--glass">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="reveal" data-i18n="home.why">¿Por qué Sueño Hogar?</h2>
+          <p class="muted reveal" data-i18n="home.whySub">Servicio rápido, estilo moderno, y asesoramiento en medidas.</p>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <div class="infoCard reveal">
+            <div class="infoCard__t" data-i18n="home.why1t">Entrega & montaje</div>
+            <div class="infoCard__d" data-i18n="home.why1d">Pregunta disponibilidad por WhatsApp.</div>
+          </div>
+          <div class="infoCard reveal">
+            <div class="infoCard__t" data-i18n="home.why2t">Colores y medidas</div>
+            <div class="infoCard__d" data-i18n="home.why2d">Te guiamos según tu espacio.</div>
+          </div>
+          <div class="infoCard reveal">
+            <div class="infoCard__t" data-i18n="home.why3t">Look premium</div>
+            <div class="infoCard__d" data-i18n="home.why3d">Diseño limpio y elegante, “future luxury”.</div>
+          </div>
+        </div>
+
+        <div class="ctaRow reveal">
+          <div class="ctaRow__left">
+            <div class="ctaRow__t" data-i18n="home.ctaTitle">¿Listo para pedir?</div>
+            <div class="ctaRow__d" data-i18n="home.ctaDesc">Envíanos foto/medidas y te respondemos rápido.</div>
+          </div>
+          <div class="ctaRow__right">
+            <a class="btn btn--wa" id="waBottom" target="_blank" rel="noopener" data-i18n="cta.whatsapp">WhatsApp</a>
+            <a class="btn btn--ghost" href="armarios.html" data-i18n="cta.viewCatalog">Ver productos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div class="reveal">
+          <div class="footer__brand" id="footerBrand">Sueño Hogar by Paco Deconforty</div>
+          <div class="muted" id="footerTag">Muebles & descanso</div>
+        </div>
+
+        <div class="footer__links reveal">
+          <a href="armarios.html" data-i18n="nav.armarios">Armarios</a>
+          <a href="sedari.html" data-i18n="nav.sedari">Sedari</a>
+          <a href="salon.html" data-i18n="nav.salon">Salón</a>
+          <a id="footerCall" href="#" data-i18n="cta.call">Llamar</a>
+        </div>
+      </div>
+
+      <div class="wrap footer__bottom">
+        <span class="muted">© <span id="year"></span> Sueño Hogar</span>
+        <span class="muted">Admin: <a href="/admin/" class="muted">/admin</a></span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Floating WOW buttons -->
+  <div class="floatDock">
+    <button class="floatDock__toggle" id="dockToggle" aria-label="Open actions">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </button>
+
+    <a class="floatBtn floatBtn--wa" id="waFloat" target="_blank" rel="noopener">
+      <span class="icon icon--wa"></span>
+      <span class="floatBtn__text">WhatsApp</span>
+    </a>
+
+    <a class="floatBtn floatBtn--tt" id="ttFloat" target="_blank" rel="noopener">
+      <span class="icon icon--tt"></span>
+      <span class="floatBtn__text">TikTok</span>
+    </a>
+  </div>
+<script>document.documentElement.classList.add('js');</script>
+  <script defer src="assets/js/app.js"></script>
 </body>
 </html>
