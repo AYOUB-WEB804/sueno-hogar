@@ -11,7 +11,7 @@ collections:
     files:
       - name: "settings"
         label: "Settings"
-        file: "site.json"
+        file: "assets/data/site.json"
         fields:
           - { label: "Brand Title", name: "brandTitle", widget: "string" }
           - { label: "Brand Sub", name: "brandSub", widget: "string" }
@@ -32,7 +32,7 @@ collections:
     files:
       - name: "products"
         label: "Products"
-        file: "products.json"
+        file: "assets/data/products.json"
         fields:
           - label: "Items"
             name: "items"
@@ -70,3 +70,4 @@ collections:
                   - { label: "ES", name: "es", widget: "text" }
                   - { label: "FR", name: "fr", widget: "text" }
                   - { label: "EN", name: "en", widget: "text" }
+
