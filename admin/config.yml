@@ -11,7 +11,7 @@ collections:
     files:
       - name: "settings"
         label: "Settings"
-        file: "assets/data/site.json"
+        file: "site.json"
         fields:
           - { label: "Brand Title", name: "brandTitle", widget: "string" }
           - { label: "Brand Sub", name: "brandSub", widget: "string" }
@@ -27,32 +27,46 @@ collections:
             widget: "list"
             field: { label: "Product ID", name: "id", widget: "string" }
 
-  - name: "products"
-    label: "Products"
-    file: "assets/data/products.json"
-    format: "json"
-    fields:
-      - label: "Items"
-        name: "items"
-        widget: "list"
+  - name: "content"
+    label: "Content"
+    files:
+      - name: "products"
+        label: "Products"
+        file: "products.json"
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Category", name: "category", widget: "select", options: ["armarios","sedari","salon"] }
-          - label: "Name"
-            name: "name"
-            widget: "object"
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.id}} — {{fields.category}}"
             fields:
-              - { label: "ES", name: "es", widget: "string" }
-              - { label: "FR", name: "fr", widget: "string" }
-              - { label: "EN", name: "en", widget: "string" }
-          - { label: "Price", name: "price", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Colors", name: "colors", widget: "list", field: { label: "Color", name: "color", widget: "string" } }
-          - { label: "Sizes", name: "sizes", widget: "list", field: { label: "Size", name: "size", widget: "string" } }
-          - label: "Description"
-            name: "desc"
-            widget: "object"
-            fields:
-              - { label: "ES", name: "es", widget: "text" }
-              - { label: "FR", name: "fr", widget: "text" }
-              - { label: "EN", name: "en", widget: "text" }
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["armarios","sedari","salon"] }
+
+              - label: "Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "ES", name: "es", widget: "string" }
+                  - { label: "FR", name: "fr", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+
+              - label: "Colors"
+                name: "colors"
+                widget: "list"
+                field: { label: "Color", name: "color", widget: "string" }
+
+              - label: "Sizes / Measures"
+                name: "sizes"
+                widget: "list"
+                field: { label: "Size", name: "size", widget: "string" }
+
+              - label: "Description"
+                name: "desc"
+                widget: "object"
+                fields:
+                  - { label: "ES", name: "es", widget: "text" }
+                  - { label: "FR", name: "fr", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
