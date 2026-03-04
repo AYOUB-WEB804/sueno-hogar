@@ -389,3 +389,13 @@ img{max-width:100%;display:block}
   opacity: 1 !important;
   visibility: visible !important;
 }
+/* ensure logo container doesn't hide it */
+.brand__logo{
+  border-radius: 10px !important;
+  background: transparent !important;
+}
+
+/* if parent has overflow hidden big radius, keep logo visible */
+.brand{
+  overflow: visible !important;
+}
