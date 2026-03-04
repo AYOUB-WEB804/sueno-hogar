@@ -1,7 +1,13 @@
 {
   "logo": "/uploads/logo.png",
-  "brandTitle": "Sueño Hogarby Paco ",
+  "brandTitle": "Sueño Hogar",
   "brandSub": "by Paco Deconforty",
   "phone": "+34513926076",
-  "tiktok": "https://www.tiktok.com/@fernandi356?_r=1&_t=ZS-94Fhb0f4Ghx"
+  "tiktok": "https://www.tiktok.com/@fernandi356?_r=1&_t=ZS-94Fhb0f4Ghx",
+  "heroImages": [
+    "/uploads/hero-1.jpg",
+    "/uploads/hero-2.jpg",
+    "/uploads/hero-3.jpg"
+  ],
+  "featuredIds": []
 }
