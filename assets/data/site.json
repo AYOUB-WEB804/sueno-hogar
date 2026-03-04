@@ -5,10 +5,10 @@
   "tiktok": "https://www.tiktok.com/@fernandi356?_r=1&_t=ZS-94Fhb0f4Ghx",
   "logo": "/uploads/whatsapp-image-2026-02-27-at-22.21.27.jpeg",
   "heroImages": [
-    "assets/img/hero/hero-1.jpg",
-    "assets/img/hero/hero-2.jpg",
-    "assets/img/hero/hero-3.jpg"
-  ],
+  "/uploads/hero-1.jpg",
+  "/uploads/hero-2.jpg",
+  "/uploads/hero-3.jpg"
+],
   "featuredIds": [
     "armario-3p",
     "sofa-paris",
