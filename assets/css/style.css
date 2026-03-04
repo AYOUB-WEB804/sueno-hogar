@@ -399,3 +399,16 @@ img{max-width:100%;display:block}
 .brand{
   overflow: visible !important;
 }
+/* Make logo visible even if it's white/transparent */
+.brand__logo{
+  width: 46px !important;
+  height: 46px !important;
+  object-fit: contain !important;
+  display: block !important;
+
+  /* add contrast */
+  background: rgba(255,255,255,.92) !important;
+  padding: 6px !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35) !important;
+}
