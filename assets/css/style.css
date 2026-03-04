@@ -380,3 +380,12 @@ img{max-width:100%;display:block}
   .grid--3{grid-template-columns:1fr}
   .grid--2{grid-template-columns:1fr}
 }
+/* FIX logo visibility */
+.brand__logo{
+  width: 44px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
