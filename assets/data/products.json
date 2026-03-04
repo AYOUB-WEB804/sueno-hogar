@@ -4,20 +4,314 @@
       "id": "armario-3p",
       "category": "armarios",
       "name": {
-        "es": "Armario 3 puertas"
+        "es": "Armario 3 puertas",
+        "fr": "Armoire 3 portes",
+        "en": "Wardrobe 3 doors"
       },
       "price": "Consultar",
-      "colors": [
-        "Ártico",
-        "Blanco"
-      ],
-      "sizes": [
-        "150x200x50"
-      ],
+      "image": "/uploads/armario-3-perto.jpg",
+      "colors": ["Ártico", "Blanco"],
+      "sizes": ["150x200x50"],
       "desc": {
-        "es": "Armario moderno con gran capacidad"
+        "es": "Armario moderno con gran capacidad.",
+        "fr": "Armoire moderne avec grande capacité.",
+        "en": "Modern wardrobe with large capacity."
+      }
+    },
+
+    {
+      "id": "canape-estambul",
+      "category": "armarios",
+      "name": {
+        "es": "Canapé Estambul",
+        "fr": "Coffre-lit Estambul",
+        "en": "Ottoman Bed Estambul"
       },
-      "image": "/uploads/armario-3-perto.jpg"
+      "price": "Consultar",
+      "image": "/uploads/canape-estambul.jpg",
+      "colors": ["Blanco", "Ártico", "Beig", "Cerezo", "Choco"],
+      "sizes": ["90", "105", "120", "135", "150", "160", "180"],
+      "desc": {
+        "es": "Cajón amplio con gran capacidad. Consulta medidas y colores.",
+        "fr": "Grand coffre avec grande capacité. Demandez tailles et couleurs.",
+        "en": "Large storage base. Ask for sizes and colors."
+      }
+    },
+
+    {
+      "id": "armario-2p-estambul",
+      "category": "armarios",
+      "name": {
+        "es": "Armario Estambul 2 puertas",
+        "fr": "Armoire Estambul 2 portes",
+        "en": "Estambul Wardrobe 2 doors"
+      },
+      "price": "Consultar",
+      "image": "/uploads/armario-2p.jpg",
+      "colors": ["Ártico", "Blanco", "Cambrian"],
+      "sizes": ["100x200x50"],
+      "desc": {
+        "es": "Armario 2 puertas · compacto y elegante.",
+        "fr": "Armoire 2 portes · compacte et élégante.",
+        "en": "2-door wardrobe · compact and elegant."
+      }
+    },
+    {
+      "id": "armario-3p-estambul",
+      "category": "armarios",
+      "name": {
+        "es": "Armario Estambul 3 puertas",
+        "fr": "Armoire Estambul 3 portes",
+        "en": "Estambul Wardrobe 3 doors"
+      },
+      "price": "Consultar",
+      "image": "/uploads/armario-3p.jpg",
+      "colors": ["Ártico", "Blanco", "Cambrian"],
+      "sizes": ["150x200x50"],
+      "desc": {
+        "es": "Armario 3 puertas · gran capacidad.",
+        "fr": "Armoire 3 portes · grande capacité.",
+        "en": "3-door wardrobe · large capacity."
+      }
+    },
+    {
+      "id": "armario-4p-estambul",
+      "category": "armarios",
+      "name": {
+        "es": "Armario Estambul 4 puertas",
+        "fr": "Armoire Estambul 4 portes",
+        "en": "Estambul Wardrobe 4 doors"
+      },
+      "price": "Consultar",
+      "image": "/uploads/armario-4p.jpg",
+      "colors": ["Ártico", "Blanco", "Cambrian"],
+      "sizes": ["200x200x50"],
+      "desc": {
+        "es": "Armario grande 4 puertas · máxima capacidad.",
+        "fr": "Grande armoire 4 portes · capacité maximale.",
+        "en": "Large 4-door wardrobe · max capacity."
+      }
+    },
+
+    {
+      "id": "sedari-sevilla",
+      "category": "sedari",
+      "name": {
+        "es": "Chaiselongue Sevilla",
+        "fr": "Chaiselongue Sevilla",
+        "en": "Sevilla Chaise Longue"
+      },
+      "price": "Consultar",
+      "image": "/uploads/sedari-sevilla.jpg",
+      "colors": ["Gris", "Beige", "Azul", "Negro"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Sedari chaiselongue · confort premium y diseño moderno.",
+        "fr": "Canapé chaiselongue · confort premium et design moderne.",
+        "en": "Chaise longue sofa · premium comfort and modern design."
+      }
+    },
+    {
+      "id": "sedari-paris",
+      "category": "sedari",
+      "name": {
+        "es": "Chaiselongue Paris",
+        "fr": "Chaiselongue Paris",
+        "en": "Paris Chaise Longue"
+      },
+      "price": "Consultar",
+      "image": "/uploads/sedari-paris.jpg",
+      "colors": ["Gris", "Beige", "Marrón", "Azul"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Diseño limpio · tejido agradable · fácil mantenimiento.",
+        "fr": "Design épuré · tissu agréable · entretien facile.",
+        "en": "Clean design · comfy fabric · easy care."
+      }
+    },
+
+    {
+      "id": "salon-sofa-3pl",
+      "category": "salon",
+      "name": {
+        "es": "Sofá 3 plazas moderno",
+        "fr": "Canapé 3 places moderne",
+        "en": "Modern 3-seater sofa"
+      },
+      "price": "Consultar",
+      "image": "/uploads/sofa-3pl.jpg",
+      "colors": ["Gris", "Beige", "Negro"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Sofá cómodo para salón · estilo moderno.",
+        "fr": "Canapé confortable · style moderne.",
+        "en": "Comfortable sofa · modern style."
+      }
+    },
+    {
+      "id": "salon-mueble-tv",
+      "category": "salon",
+      "name": {
+        "es": "Mueble TV moderno",
+        "fr": "Meuble TV moderne",
+        "en": "Modern TV unit"
+      },
+      "price": "Consultar",
+      "image": "/uploads/mueble-tv.jpg",
+      "colors": ["Blanco", "Ártico", "Roble"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Mueble TV minimal · orden y estilo.",
+        "fr": "Meuble TV minimal · ordre et style.",
+        "en": "Minimal TV unit · clean look."
+      }
+    },
+    {
+      "id": "salon-mesa-centro",
+      "category": "salon",
+      "name": {
+        "es": "Mesa de centro moderna",
+        "fr": "Table basse moderne",
+        "en": "Modern coffee table"
+      },
+      "price": "Consultar",
+      "image": "/uploads/mesa-centro.jpg",
+      "colors": ["Blanco", "Roble", "Negro"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Mesa de centro para salón · look premium.",
+        "fr": "Table basse pour salon · look premium.",
+        "en": "Coffee table · premium look."
+      }
+    },
+
+    {
+      "id": "comoda-3cajones",
+      "category": "armarios",
+      "name": {
+        "es": "Cómoda 3 cajones",
+        "fr": "Commode 3 tiroirs",
+        "en": "3-drawer chest"
+      },
+      "price": "Consultar",
+      "image": "/uploads/comoda-3cajones.jpg",
+      "colors": ["Blanco", "Ártico", "Cambrian", "Cerezo", "Wengué"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Cómoda práctica · ideal para dormitorio.",
+        "fr": "Commode pratique · idéale pour chambre.",
+        "en": "Practical chest · ideal for bedroom."
+      }
+    },
+    {
+      "id": "mesita-noche",
+      "category": "armarios",
+      "name": {
+        "es": "Mesita de noche",
+        "fr": "Table de nuit",
+        "en": "Bedside table"
+      },
+      "price": "Consultar",
+      "image": "/uploads/mesita-noche.jpg",
+      "colors": ["Blanco", "Ártico", "Cambrian", "Cerezo", "Wengué"],
+      "sizes": ["Consultar medidas"],
+      "desc": {
+        "es": "Mesita moderna · combina con armarios y cabeceros.",
+        "fr": "Table de nuit moderne · assortie aux armoires.",
+        "en": "Modern bedside table · matches wardrobes."
+      }
+    },
+
+    {
+      "id": "colchon-nube-21",
+      "category": "armarios",
+      "name": {
+        "es": "Colchón Nube 21cm",
+        "fr": "Matelas Nube 21cm",
+        "en": "Nube Mattress 21cm"
+      },
+      "price": "Consultar",
+      "image": "/uploads/colchon-nube-21.jpg",
+      "colors": ["Blanco"],
+      "sizes": ["90", "105", "120", "135", "150", "160", "180"],
+      "desc": {
+        "es": "Colchón cómodo · 21cm · consulta firmeza.",
+        "fr": "Matelas confortable · 21cm · demandez la fermeté.",
+        "en": "Comfort mattress · 21cm · ask firmness."
+      }
+    },
+    {
+      "id": "colchon-carbono-25",
+      "category": "armarios",
+      "name": {
+        "es": "Colchón Carbono 25cm",
+        "fr": "Matelas Carbono 25cm",
+        "en": "Carbono Mattress 25cm"
+      },
+      "price": "Consultar",
+      "image": "/uploads/colchon-carbono-25.jpg",
+      "colors": ["Blanco"],
+      "sizes": ["90", "105", "120", "135", "150", "160", "180"],
+      "desc": {
+        "es": "25cm · confort y soporte · consulta detalles.",
+        "fr": "25cm · confort et soutien · demandez détails.",
+        "en": "25cm · comfort & support · ask details."
+      }
+    },
+    {
+      "id": "colchon-grafeno-30",
+      "category": "armarios",
+      "name": {
+        "es": "Colchón Grafeno 30cm",
+        "fr": "Matelas Grafeno 30cm",
+        "en": "Grafeno Mattress 30cm"
+      },
+      "price": "Consultar",
+      "image": "/uploads/colchon-grafeno-30.jpg",
+      "colors": ["Blanco"],
+      "sizes": ["90", "105", "120", "135", "150", "160", "180"],
+      "desc": {
+        "es": "30cm · gama alta · consulta firmeza y entrega.",
+        "fr": "30cm · haut de gamme · demandez fermeté et livraison.",
+        "en": "30cm · high-end · ask firmness & delivery."
+      }
+    },
+
+    {
+      "id": "cabecero-basic",
+      "category": "armarios",
+      "name": {
+        "es": "Cabecero Basic",
+        "fr": "Tête de lit Basic",
+        "en": "Basic headboard"
+      },
+      "price": "Consultar",
+      "image": "/uploads/cabecero-basic.jpg",
+      "colors": ["Beige", "Gris", "Azul", "Negro"],
+      "sizes": ["90", "105", "120", "135", "150", "160", "180"],
+      "desc": {
+        "es": "Cabecero moderno · varios colores y medidas.",
+        "fr": "Tête de lit moderne · plusieurs couleurs.",
+        "en": "Modern headboard · multiple colors."
+      }
+    },
+    {
+      "id": "cabecero-venus",
+      "category": "armarios",
+      "name": {
+        "es": "Cabecero Venus",
+        "fr": "Tête de lit Venus",
+        "en": "Venus headboard"
+      },
+      "price": "Consultar",
+      "image": "/uploads/cabecero-venus.jpg",
+      "colors": ["Beige", "Gris", "Azul", "Negro"],
+      "sizes": ["90", "105", "120", "135", "150", "160", "180"],
+      "desc": {
+        "es": "Cabecero premium · look elegante.",
+        "fr": "Tête de lit premium · look élégant.",
+        "en": "Premium headboard · elegant look."
+      }
     }
   ]
 }
