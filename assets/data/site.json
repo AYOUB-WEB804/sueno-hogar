@@ -1,18 +1,7 @@
 {
-  "brandTitle": "Sueño Hogar",
+  "logo": "/uploads/logo.png.png",
+  "brandTitle": "Sueño Hogarby Paco ",
   "brandSub": "by Paco Deconforty",
   "phone": "+34513926076",
-  "tiktok": "https://www.tiktok.com/@fernandi356?_r=1&_t=ZS-94Fhb0f4Ghx",
-  ""logo": "/uploads/logo.png",
-  "heroImages": [
-    "/uploads/hero-1.jpg",
-    "/uploads/hero-2.jpg",
-    "/uploads/hero-3.jpg"
-  ],
-  "featuredIds": [
-    "armario-3p",
-    "sofa-paris",
-    "canape-estambul",
-    "colchon-carbono"
-  ]
+  "tiktok": "https://www.tiktok.com/@fernandi356?_r=1&_t=ZS-94Fhb0f4Ghx"
 }
