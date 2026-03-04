@@ -412,3 +412,55 @@ img{max-width:100%;display:block}
   border-radius: 14px !important;
   box-shadow: 0 10px 30px rgba(0,0,0,.35) !important;
 }
+/* ===== Product cards upgrade (luxury) ===== */
+.productCard{
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(10,14,22,.55);
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+.productCard__img{
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.productCard__body{
+  padding: 14px 14px 16px;
+}
+
+.productCard__name{
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.productCard__price{
+  font-weight: 900;
+  opacity: .9;
+}
+
+.tags{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.tag{
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  padding:6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.productCard__actions{
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+  flex-wrap:wrap;
+}
